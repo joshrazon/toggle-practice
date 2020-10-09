@@ -1,0 +1,103 @@
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  
+  background-color: hsl(209, 100%, 15%);
+  background-size: cover;
+  background-position: center;
+}
+
+.change {
+  background-color: rgb(63, 1, 126);
+}
+
+.text-container {
+  height: 50%;
+  width: 70%;
+  background: linear-gradient(45deg, hsl(250, 88%, 50%, 20%),	hsl(209, 100%, 52%, 20%));
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+
+  text-align: center;
+  color: white;
+}
+
+.text-container h1 {
+  font-family: 'Staatliches', cursive;
+  /* Fluid Font Size */
+  font-size: calc(40px + (80 - 40) * ((100vw - 300px) / (1920 - 300)));
+  text-shadow: 1px 7px 7px black;
+  letter-spacing: 8px;
+}
+
+.text-container p {
+  font-family: 'Merriweather Sans', sans-serif;
+  /* Fluid Font Size */
+  font-size: calc(20px + (24 - 20) * ((100vw - 300px) / (1920 - 300)));
+  text-shadow: 2px 4px 3px black;
+}
+
+.text-container button {
+  font-family: 'Overpass', sans-serif;
+  /* Fluid Font Size */
+  font-size: calc(14px + (20 - 14) * ((100vw - 300px) / (1920 - 300)));
+  font-weight: 500;
+  color: white;
+  
+  padding: 15px 20px;
+  margin-bottom: 4rem;
+  
+  background-color: hsl(250, 100%, 10%);
+  border: 1px solid hsla(207, 26%, 27%, 0.753);
+  border-radius: 4px;
+}
+
+.text-container button:hover {
+  background-color: hsl(209, 100%, 15%);
+  transition: all .3s;
+}
+
+.text-container button:active {
+  outline: none;
+  transform: scale(.9);
+  transition: all .2s;
+}
+
+.text-container button:focus {
+  outline: none;
+}
+
+
+/* Reset Link Styles */
+.text-container button a,
+.text-container button a:visited,
+.text-container button a:hover,
+.text-container button a:active {
+    text-decoration: none;
+    color: white;
+  }
+
+
+/* Mobile View */
+@media (max-width: 590px) {
+  .text-container {
+    width: 80%;
+  }
+  
+  .text-container button {
+    margin: 0;
+  }
+}
