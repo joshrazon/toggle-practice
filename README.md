@@ -1,1 +1,1 @@
-# GH Pages [Link](https://joshrazon.github.io/cpnt260-a1/)
+# GH Pages [Link](https://joshrazon.github.io/toggle-practice/)
